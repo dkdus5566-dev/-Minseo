@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영어 단어장</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- ① 홈 화면 -->
+  <div id="homeScreen" class="screen active">
+    <div class="home-inner">
+      <div class="home-logo">📚</div>
+      <h1>영어 단어장</h1>
+      <p class="home-sub">챕터를 선택한 후 모드를 시작하세요</p>
+
+      <!-- 챕터 선택 -->
+      <div class="chapter-section">
+        <p class="section-label">챕터 선택</p>
+        <button class="ch-btn ch-all" id="chBtn0" onclick="selectChapter(0)">
+          <span class="ch-num">전체</span>
+          <span class="ch-cnt">2174단어</span>
+        </button>
+        <div class="chapter-grid">
+          <button class="ch-btn" id="chBtn1" onclick="selectChapter(1)">
+            <span class="ch-num">Chapter 1</span>
+            <span class="ch-cnt">33단어 · 01~04</span>
+          </button>
+          <button class="ch-btn" id="chBtn2" onclick="selectChapter(2)">
+            <span class="ch-num">Chapter 2</span>
+            <span class="ch-cnt">19단어 · 05~07</span>
+          </button>
+          <button class="ch-btn" id="chBtn3" onclick="selectChapter(3)">
+            <span class="ch-num">Chapter 3</span>
+            <span class="ch-cnt">32단어 · 08~14</span>
+          </button>
+          <button class="ch-btn" id="chBtn4" onclick="selectChapter(4)">
+            <span class="ch-num">Chapter 4</span>
+            <span class="ch-cnt">137단어 · 15~18</span>
+          </button>
+          <button class="ch-btn" id="chBtn5" onclick="selectChapter(5)">
+            <span class="ch-num">Chapter 5</span>
+            <span class="ch-cnt">68단어 · 19~20</span>
+          </button>
+          <button class="ch-btn" id="chBtn6" onclick="selectChapter(6)">
+            <span class="ch-num">Chapter 6</span>
+            <span class="ch-cnt">265단어 · 21~24</span>
+          </button>
+          <button class="ch-btn" id="chBtn7" onclick="selectChapter(7)">
+            <span class="ch-num">Chapter 7</span>
+            <span class="ch-cnt">68단어 · 25~26</span>
+          </button>
+          <button class="ch-btn" id="chBtn8" onclick="selectChapter(8)">
+            <span class="ch-num">Chapter 8</span>
+            <span class="ch-cnt">93단어 · 27~28</span>
+          </button>
+          <button class="ch-btn" id="chBtn9" onclick="selectChapter(9)">
+            <span class="ch-num">Chapter 9</span>
+            <span class="ch-cnt">156단어 · 29~32</span>
+          </button>
+          <button class="ch-btn" id="chBtn10" onclick="selectChapter(10)">
+            <span class="ch-num">Chapter 10</span>
+            <span class="ch-cnt">51단어 · 33</span>
+          </button>
+          <button class="ch-btn" id="chBtn11" onclick="selectChapter(11)">
+            <span class="ch-num">Chapter 11</span>
+            <span class="ch-cnt">94단어 · 34~36</span>
+          </button>
+          <button class="ch-btn" id="chBtn12" onclick="selectChapter(12)">
+            <span class="ch-num">Chapter 12</span>
+            <span class="ch-cnt">105단어 · 37~39</span>
+          </button>
+          <button class="ch-btn" id="chBtn13" onclick="selectChapter(13)">
+            <span class="ch-num">Chapter 13</span>
+            <span class="ch-cnt">99단어 · 40~43</span>
+          </button>
+          <button class="ch-btn" id="chBtn14" onclick="selectChapter(14)">
+            <span class="ch-num">Chapter 14</span>
+            <span class="ch-cnt">88단어 · 44~45</span>
+          </button>
+          <button class="ch-btn" id="chBtn15" onclick="selectChapter(15)">
+            <span class="ch-num">Chapter 15</span>
+            <span class="ch-cnt">83단어 · 46~48</span>
+          </button>
+          <button class="ch-btn" id="chBtn16" onclick="selectChapter(16)">
+            <span class="ch-num">Chapter 16</span>
+            <span class="ch-cnt">96단어 · 49~50</span>
+          </button>
+          <button class="ch-btn" id="chBtn17" onclick="selectChapter(17)">
+            <span class="ch-num">Chapter 17</span>
+            <span class="ch-cnt">95단어 · 51~52</span>
+          </button>
+          <button class="ch-btn" id="chBtn18" onclick="selectChapter(18)">
+            <span class="ch-num">Chapter 18</span>
+            <span class="ch-cnt">37단어 · 53</span>
+          </button>
+          <button class="ch-btn" id="chBtn19" onclick="selectChapter(19)">
+            <span class="ch-num">Chapter 19</span>
+            <span class="ch-cnt">100단어 · 54~56</span>
+          </button>
+          <button class="ch-btn" id="chBtn20" onclick="selectChapter(20)">
+            <span class="ch-num">Chapter 20</span>
+            <span class="ch-cnt">57단어 · 57</span>
+          </button>
+          <button class="ch-btn" id="chBtn21" onclick="selectChapter(21)">
+            <span class="ch-num">Chapter 21</span>
+            <span class="ch-cnt">76단어 · 58~59</span>
+          </button>
+          <button class="ch-btn" id="chBtn22" onclick="selectChapter(22)">
+            <span class="ch-num">Chapter 22</span>
+            <span class="ch-cnt">57단어 · 60~61</span>
+          </button>
+          <button class="ch-btn" id="chBtn23" onclick="selectChapter(23)">
+            <span class="ch-num">Chapter 23</span>
+            <span class="ch-cnt">71단어 · 62~63</span>
+          </button>
+          <button class="ch-btn" id="chBtn24" onclick="selectChapter(24)">
+            <span class="ch-num">Chapter 24</span>
+            <span class="ch-cnt">83단어 · 64~66</span>
+          </button>
+          <button class="ch-btn" id="chBtn25" onclick="selectChapter(25)">
+            <span class="ch-num">Chapter 25</span>
+            <span class="ch-cnt">111단어 · 67~70</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 모드 선택 (챕터 선택 후 노출) -->
+      <div id="modeSection" class="mode-section hidden">
+        <p class="section-label">모드 선택</p>
+
+        <button class="mode-card" onclick="startMode(1)">
+          <span class="mc-icon">🇰🇷</span>
+          <div class="mc-text">
+            <strong>모드 1 · 한글 뜻 맞추기</strong>
+            <span>영어 단어의 한글 의미를 4가지 중 고르세요</span>
+          </div>
+          <span class="mc-chevron">›</span>
+        </button>
+
+        <button class="mode-card" onclick="startMode(2)">
+          <span class="mc-icon">🔗</span>
+          <div class="mc-text">
+            <strong>모드 2 · 같은 카테고리 찾기</strong>
+            <span>같은 분류에 속하는 영어 단어를 고르세요</span>
+          </div>
+          <span class="mc-chevron">›</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ② 퀴즈 화면 -->
+  <div id="quizScreen" class="screen">
+    <div class="qhdr">
+      <button class="x-btn" onclick="goHome()">×</button>
+      <div class="qhdr-center">
+        <span id="progressText" class="prog-text">1 / 33</span>
+        <span id="chapterLabel" class="chapter-badge"></span>
+      </div>
+      <div class="x-btn-ghost"></div>
+    </div>
+    <div class="prog-bar"><div id="progFill" class="prog-fill"></div></div>
+
+    <div id="retryBadge" class="retry-badge hidden">🔄 복습 중</div>
+
+    <div class="word-zone">
+      <p id="wordEl" class="big-word">hello</p>
+      <p id="hintEl" class="hint-text"></p>
+    </div>
+
+    <div class="answers-zone">
+      <p class="pick-label">Choose the answer</p>
+      <div id="choicesEl"></div>
+    </div>
+  </div>
+
+  <!-- ③ 완료 화면 -->
+  <div id="doneScreen" class="screen">
+    <div class="done-inner">
+      <div class="done-emoji">🎉</div>
+      <h2>학습 완료!</h2>
+      <p id="doneStats" class="done-stats"></p>
+      <button class="big-btn" onclick="goHome()">처음으로 돌아가기</button>
+    </div>
+  </div>
+
+</div><!-- .app -->
+
+<!-- 팝업 오버레이 -->
+<div id="overlay" class="overlay hidden">
+  <div id="sheet" class="sheet">
+    <div id="sheetHead" class="sheet-head">
+      <span id="sheetEmoji"></span>
+      <span id="sheetTitle"></span>
+    </div>
+    <div class="sheet-body">
+      <p id="sheetWord" class="sh-word"></p>
+
+      <p id="sheetCorrectLbl" class="sh-lbl correct-lbl"></p>
+      <p id="sheetCorrectAns" class="sh-ans-main"></p>
+      <p id="sheetCorrectSub" class="sh-ans-sub hidden"></p>
+
+      <div id="sheetWrong" class="sh-wrong hidden">
+        <div class="sh-divider"></div>
+        <p class="sh-lbl wrong-lbl">You said:</p>
+        <p id="sheetUserAns" class="sh-ans-wrong"></p>
+      </div>
+    </div>
+    <button class="big-btn sheet-continue" onclick="continueQuiz()">Continue</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
